@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home page</title>
+</head>
+<body>
+    <h1>home Page</h1>
+    {% if username %}
+        <p>Hello,{{ username }}! you are already logged in.<p>
+        <a href="/logout">logout</a>
+    {% else %}
+            <P>you are not logged in. please <a href="/login">login</a> to access the home Page.</P>
+    {% endif %}
+</body>
+</html>

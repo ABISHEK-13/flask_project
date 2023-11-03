@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to Your Dashboard</h1>
+    <div>
+        <h2>User Information:</h2>
+        <p><strong>Name:</strong> {{ user_info[0] }}</p>
+        <p><strong>Username:</strong> {{ user_info[1] }}</p>
+        <p><strong>Email:</strong> {{ user_info[2] }}</p>
+    </div>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
